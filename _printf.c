@@ -15,7 +15,7 @@ int print_hex_cap(va_list ls)
  * @ls: args list
  * Return: num char printed
  */
-int print_percent(va_list ls)
+int print_percent(va_list __attribute__((unused))ls)
 {
 	_putchar('%');
 	return (1);
