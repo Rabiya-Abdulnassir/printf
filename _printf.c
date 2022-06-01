@@ -64,7 +64,8 @@ int _printf(char *fmt, ...)
 	va_list  args;
 	int i =  0;
 	int len = 0;
-
+	if (fmt == NULL)
+		return (-1);
 	va_start(args, fmt);
 	while (fmt[i] != '\0')
 	{
