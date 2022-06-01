@@ -67,6 +67,8 @@ int _printf(char *fmt, ...)
 
 	if (fmt == NULL)
 		return (-1);
+	if (fmt[0] == '%' && fmt[1] == '\0')
+		return (-1);
 	va_start(args, fmt);
 	while (fmt[i] != '\0')
 	{
