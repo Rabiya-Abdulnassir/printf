@@ -34,7 +34,8 @@ int print_int(va_list ls)
 	if (num < 0)
 	{
 		_putchar('-');
-		i = print_d((-1) * (num / 10));
+		if ((num / 10) != 0)
+			i = print_d((-1) * (num / 10));
 		_putchar(((-1) * (num % 10)) + '0');
 		return (2 + i);
 	}
