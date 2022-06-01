@@ -43,7 +43,7 @@ void print_bin(unsigned int n)
  *
  * Return: number of bin digits printed
  */
-int print_b(const va_list ls)
+int print_b(va_list ls)
 {
 	unsigned int n;
 
