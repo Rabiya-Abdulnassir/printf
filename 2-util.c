@@ -23,7 +23,7 @@ int print_s(va_list ls)
 	char *s = va_arg(ls, char *);
 
 	if (s == NULL)
-		return (write(STDOUT_FILENO, "(nill)", 6));
+		return (write(STDOUT_FILENO, "(null)", 6));
 
 	while (s[++i])
 		_putchar(s[i]);
