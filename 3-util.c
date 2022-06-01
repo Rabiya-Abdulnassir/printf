@@ -96,8 +96,8 @@ int print_b(unsigned int n)
 	}
 	else
 	{
-		_putchar((n % 2) + '0');
 		i = print_b(n / 2);
+		_putchar((n % 2) + '0');
 		return (i  + 1);
 	}
 }
