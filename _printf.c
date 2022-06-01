@@ -6,9 +6,9 @@
  */
 int print_hex_cap(va_list ls)
 {
-	  unsigned int n = va_arg(ls, unsigned int);
+	unsigned int n = va_arg(ls, unsigned int);
 
-	 return (print_h(n, 65));
+	return (print_h(n, 65));
 }
 /**
  * print_percent - print percent
@@ -64,6 +64,7 @@ int _printf(char *fmt, ...)
 	va_list  args;
 	int i =  0;
 	int len = 0;
+
 	if (fmt == NULL)
 		return (-1);
 	va_start(args, fmt);
