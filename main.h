@@ -4,9 +4,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 void _putchar(char c);
+int digits(int base, unsigned int n);
 void print_hex(unsigned int n, int ch);
-int print_h_lower(const va_list ls);
-int print_h_upper(const va_list ls);
+int print_h_lower(va_list ls);
+int print_h_upper(va_list ls);
 int bin_digits(unsigned int n);
 void print_bin(unsigned int n);
 int print_b(va_list ls);
