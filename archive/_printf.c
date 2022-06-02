@@ -1,5 +1,16 @@
 #include "main.h"
 /**
+ * print_hex_cap -print hex in cap
+ * @ls: args list
+ * Return: num char printed
+ */
+int print_hex_cap(va_list ls)
+{
+	unsigned int n = va_arg(ls, unsigned int);
+
+	return (print_h(n, 65));
+}
+/**
  * print_percent - print percent
  * @ls: args list
  * Return: num char printed
